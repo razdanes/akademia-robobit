@@ -1,0 +1,3 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+body{font-family:'Baloo 2',system-ui,sans-serif;background:#0f172a;color:#fff;touch-action:manipulation}
+canvas{touch-action:none}

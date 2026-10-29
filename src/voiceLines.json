@@ -1,0 +1,452 @@
+[
+ {
+  "scene": "Menu główne",
+  "id": "menu_hello",
+  "text": "Cześć! Jestem RoboBit. Wybierz zabawę!"
+ },
+ {
+  "scene": "Kolorowanki",
+  "id": "color_done",
+  "text": "Brawo! Świetna robota!"
+ },
+ {
+  "scene": "Paint Junior",
+  "id": "paint_done",
+  "text": "Piękny rysunek!"
+ },
+ {
+  "scene": "Budujemy komputer",
+  "id": "pc_intro",
+  "text": "Zbudujmy komputer! Dotknij miejsca, w którym ma być pierwsza część."
+ },
+ {
+  "scene": "Budujemy komputer – opis części",
+  "id": "pc_part_case",
+  "text": "Obudowa. Obudowa to „dom” komputera. Chroni części przed kurzem i uderzeniami. Ma otwory i wentylatory, żeby w środku płynęło chłodne powietrze."
+ },
+ {
+  "scene": "Budujemy komputer – opis części",
+  "id": "pc_part_board",
+  "text": "Płyta główna. Płyta główna łączy wszystkie części ze sobą – jak miasto z drogami. Wkręcamy ją w obudowę. Każda część wpina się w inne gniazdo na płycie."
+ },
+ {
+  "scene": "Budujemy komputer – opis części",
+  "id": "pc_part_cpu",
+  "text": "Procesor (CPU). Procesor to mózg komputera. Liczy i wykonuje polecenia. Wkładamy go w kwadratowe gniazdo na płycie. Uważaj na delikatne złote nóżki!"
+ },
+ {
+  "scene": "Budujemy komputer – opis części",
+  "id": "pc_part_cooler",
+  "text": "Chłodzenie. Procesor bardzo się grzeje, jak silnik w samochodzie. Chłodzenie z wentylatorem stawiamy na procesorze i wywiewa ciepło. Bez niego komputer by się zawiesił."
+ },
+ {
+  "scene": "Budujemy komputer – opis części",
+  "id": "pc_part_ram",
+  "text": "Pamięć RAM. RAM to pamięć na chwilę. Trzyma to, co robisz teraz, np. otwartą grę. Wpinamy ją w długie wąskie sloty obok procesora. Po wyłączeniu prądu RAM wszystko zapomina."
+ },
+ {
+  "scene": "Budujemy komputer – opis części",
+  "id": "pc_part_ssd",
+  "text": "Dysk SSD. Dysk to schowek. Tu na stałe mieszkają system, gry i zdjęcia. Mały dysk M.2 wpinamy w gniazdo na płycie. SSD jest dużo szybszy niż stary dysk z talerzami."
+ },
+ {
+  "scene": "Budujemy komputer – opis części",
+  "id": "pc_part_gpu",
+  "text": "Karta graficzna. Karta graficzna rysuje obraz na ekranie. Ważna w grach i filmach. Wsuwamy ją w najdłuższe gniazdo PCIe aż kliknie."
+ },
+ {
+  "scene": "Budujemy komputer – opis części",
+  "id": "pc_part_psu",
+  "text": "Zasilacz. Zasilacz zamienia prąd z gniazdka na bezpieczny prąd dla części. Kable z zasilacza idą do płyty, karty graficznej i dysku. To „serce”, które daje energię."
+ },
+ {
+  "scene": "Budujemy komputer – kolejny krok",
+  "id": "pc_ask_board",
+  "text": "Teraz: Płyta główna. Gdzie to zamontujemy?"
+ },
+ {
+  "scene": "Budujemy komputer – kolejny krok",
+  "id": "pc_ask_cpu",
+  "text": "Teraz: Procesor (CPU). Gdzie to zamontujemy?"
+ },
+ {
+  "scene": "Budujemy komputer – kolejny krok",
+  "id": "pc_ask_cooler",
+  "text": "Teraz: Chłodzenie. Gdzie to zamontujemy?"
+ },
+ {
+  "scene": "Budujemy komputer – kolejny krok",
+  "id": "pc_ask_ram",
+  "text": "Teraz: Pamięć RAM. Gdzie to zamontujemy?"
+ },
+ {
+  "scene": "Budujemy komputer – kolejny krok",
+  "id": "pc_ask_ssd",
+  "text": "Teraz: Dysk SSD. Gdzie to zamontujemy?"
+ },
+ {
+  "scene": "Budujemy komputer – kolejny krok",
+  "id": "pc_ask_gpu",
+  "text": "Teraz: Karta graficzna. Gdzie to zamontujemy?"
+ },
+ {
+  "scene": "Budujemy komputer – kolejny krok",
+  "id": "pc_ask_psu",
+  "text": "Teraz: Zasilacz. Gdzie to zamontujemy?"
+ },
+ {
+  "scene": "Budujemy komputer – podpowiedź po pomyłce",
+  "id": "pc_hint_case",
+  "text": "Hmm, to nie tutaj. Podpowiedź: Dotknij dużej ramki dookoła całego komputera."
+ },
+ {
+  "scene": "Budujemy komputer – podpowiedź po pomyłce",
+  "id": "pc_hint_board",
+  "text": "Hmm, to nie tutaj. Podpowiedź: To duża zielona płyta w środku obudowy."
+ },
+ {
+  "scene": "Budujemy komputer – podpowiedź po pomyłce",
+  "id": "pc_hint_cpu",
+  "text": "Hmm, to nie tutaj. Podpowiedź: Szukaj małego kwadratu w lewym górnym rogu płyty."
+ },
+ {
+  "scene": "Budujemy komputer – podpowiedź po pomyłce",
+  "id": "pc_hint_cooler",
+  "text": "Hmm, to nie tutaj. Podpowiedź: Połóż je na procesorze – dotknij jeszcze raz w tym samym miejscu."
+ },
+ {
+  "scene": "Budujemy komputer – podpowiedź po pomyłce",
+  "id": "pc_hint_ram",
+  "text": "Hmm, to nie tutaj. Podpowiedź: Cztery długie, pionowe sloty obok procesora."
+ },
+ {
+  "scene": "Budujemy komputer – podpowiedź po pomyłce",
+  "id": "pc_hint_ssd",
+  "text": "Hmm, to nie tutaj. Podpowiedź: Małe, płaskie gniazdo pod procesorem."
+ },
+ {
+  "scene": "Budujemy komputer – podpowiedź po pomyłce",
+  "id": "pc_hint_gpu",
+  "text": "Hmm, to nie tutaj. Podpowiedź: Najdłuższe poziome gniazdo na dole płyty."
+ },
+ {
+  "scene": "Budujemy komputer – podpowiedź po pomyłce",
+  "id": "pc_hint_psu",
+  "text": "Hmm, to nie tutaj. Podpowiedź: Prostokąt w prawym dolnym rogu obudowy."
+ },
+ {
+  "scene": "Budujemy komputer",
+  "id": "pc_done",
+  "text": "Hura! Zbudowałeś komputer! Wszystkie części współpracują."
+ },
+ {
+  "scene": "Klawiatura",
+  "id": "kb_pick",
+  "text": "Wybierz, czego chcesz ćwiczyć!"
+ },
+ {
+  "scene": "Klawiatura",
+  "id": "kb_press",
+  "text": "Naciśnij"
+ },
+ {
+  "scene": "Klawiatura",
+  "id": "kb_good",
+  "text": "Świetnie piszesz!"
+ },
+ {
+  "scene": "Klawiatura",
+  "id": "kb_try",
+  "text": "Dobra robota! Ćwicz dalej."
+ },
+ {
+  "scene": "Klawiatura – nazwy liter",
+  "id": "kb_char_A",
+  "text": "a"
+ },
+ {
+  "scene": "Klawiatura – nazwy liter",
+  "id": "kb_char_B",
+  "text": "be"
+ },
+ {
+  "scene": "Klawiatura – nazwy liter",
+  "id": "kb_char_C",
+  "text": "ce"
+ },
+ {
+  "scene": "Klawiatura – nazwy liter",
+  "id": "kb_char_D",
+  "text": "de"
+ },
+ {
+  "scene": "Klawiatura – nazwy liter",
+  "id": "kb_char_E",
+  "text": "e"
+ },
+ {
+  "scene": "Klawiatura – nazwy liter",
+  "id": "kb_char_F",
+  "text": "ef"
+ },
+ {
+  "scene": "Klawiatura – nazwy liter",
+  "id": "kb_char_G",
+  "text": "gie"
+ },
+ {
+  "scene": "Klawiatura – nazwy liter",
+  "id": "kb_char_H",
+  "text": "ha"
+ },
+ {
+  "scene": "Klawiatura – nazwy liter",
+  "id": "kb_char_I",
+  "text": "i"
+ },
+ {
+  "scene": "Klawiatura – nazwy liter",
+  "id": "kb_char_J",
+  "text": "jot"
+ },
+ {
+  "scene": "Klawiatura – nazwy liter",
+  "id": "kb_char_K",
+  "text": "ka"
+ },
+ {
+  "scene": "Klawiatura – nazwy liter",
+  "id": "kb_char_L",
+  "text": "el"
+ },
+ {
+  "scene": "Klawiatura – nazwy liter",
+  "id": "kb_char_M",
+  "text": "em"
+ },
+ {
+  "scene": "Klawiatura – nazwy liter",
+  "id": "kb_char_N",
+  "text": "en"
+ },
+ {
+  "scene": "Klawiatura – nazwy liter",
+  "id": "kb_char_O",
+  "text": "o"
+ },
+ {
+  "scene": "Klawiatura – nazwy liter",
+  "id": "kb_char_P",
+  "text": "pe"
+ },
+ {
+  "scene": "Klawiatura – nazwy liter",
+  "id": "kb_char_Q",
+  "text": "ku"
+ },
+ {
+  "scene": "Klawiatura – nazwy liter",
+  "id": "kb_char_R",
+  "text": "er"
+ },
+ {
+  "scene": "Klawiatura – nazwy liter",
+  "id": "kb_char_S",
+  "text": "es"
+ },
+ {
+  "scene": "Klawiatura – nazwy liter",
+  "id": "kb_char_T",
+  "text": "te"
+ },
+ {
+  "scene": "Klawiatura – nazwy liter",
+  "id": "kb_char_U",
+  "text": "u"
+ },
+ {
+  "scene": "Klawiatura – nazwy liter",
+  "id": "kb_char_V",
+  "text": "fał"
+ },
+ {
+  "scene": "Klawiatura – nazwy liter",
+  "id": "kb_char_W",
+  "text": "wu"
+ },
+ {
+  "scene": "Klawiatura – nazwy liter",
+  "id": "kb_char_X",
+  "text": "iks"
+ },
+ {
+  "scene": "Klawiatura – nazwy liter",
+  "id": "kb_char_Y",
+  "text": "igrek"
+ },
+ {
+  "scene": "Klawiatura – nazwy liter",
+  "id": "kb_char_Z",
+  "text": "zet"
+ },
+ {
+  "scene": "Klawiatura – nazwy cyfr",
+  "id": "kb_char_0",
+  "text": "zero"
+ },
+ {
+  "scene": "Klawiatura – nazwy cyfr",
+  "id": "kb_char_1",
+  "text": "jeden"
+ },
+ {
+  "scene": "Klawiatura – nazwy cyfr",
+  "id": "kb_char_2",
+  "text": "dwa"
+ },
+ {
+  "scene": "Klawiatura – nazwy cyfr",
+  "id": "kb_char_3",
+  "text": "trzy"
+ },
+ {
+  "scene": "Klawiatura – nazwy cyfr",
+  "id": "kb_char_4",
+  "text": "cztery"
+ },
+ {
+  "scene": "Klawiatura – nazwy cyfr",
+  "id": "kb_char_5",
+  "text": "pięć"
+ },
+ {
+  "scene": "Klawiatura – nazwy cyfr",
+  "id": "kb_char_6",
+  "text": "sześć"
+ },
+ {
+  "scene": "Klawiatura – nazwy cyfr",
+  "id": "kb_char_7",
+  "text": "siedem"
+ },
+ {
+  "scene": "Klawiatura – nazwy cyfr",
+  "id": "kb_char_8",
+  "text": "osiem"
+ },
+ {
+  "scene": "Klawiatura – nazwy cyfr",
+  "id": "kb_char_9",
+  "text": "dziewięć"
+ },
+ {
+  "scene": "Klawiatura – słowa",
+  "id": "kb_word_KOT",
+  "text": "kot"
+ },
+ {
+  "scene": "Klawiatura – słowa",
+  "id": "kb_word_DOM",
+  "text": "dom"
+ },
+ {
+  "scene": "Klawiatura – słowa",
+  "id": "kb_word_PIES",
+  "text": "pies"
+ },
+ {
+  "scene": "Klawiatura – słowa",
+  "id": "kb_word_LAS",
+  "text": "las"
+ },
+ {
+  "scene": "Klawiatura – słowa",
+  "id": "kb_word_ROBOT",
+  "text": "robot"
+ },
+ {
+  "scene": "Klawiatura – słowa",
+  "id": "kb_word_MAMA",
+  "text": "mama"
+ },
+ {
+  "scene": "Klawiatura – słowa",
+  "id": "kb_word_TATA",
+  "text": "tata"
+ },
+ {
+  "scene": "Klawiatura – słowa",
+  "id": "kb_word_LATO",
+  "text": "lato"
+ },
+ {
+  "scene": "Klawiatura – słowa",
+  "id": "kb_word_MYSZ",
+  "text": "mysz"
+ },
+ {
+  "scene": "Klawiatura – słowa",
+  "id": "kb_word_KOD",
+  "text": "kod"
+ },
+ {
+  "scene": "Klawiatura – słowa",
+  "id": "kb_word_GRA",
+  "text": "gra"
+ },
+ {
+  "scene": "Klawiatura – słowa",
+  "id": "kb_word_BIT",
+  "text": "bit"
+ },
+ {
+  "scene": "Baza danych",
+  "id": "db_intro",
+  "text": "Baza danych to tabela. Wiersz to jeden zapis, a kolumny to jego pola."
+ },
+ {
+  "scene": "Baza danych",
+  "id": "db_done",
+  "text": "Brawo! Znasz już podstawy baz danych!"
+ },
+ {
+  "scene": "Baza danych",
+  "id": "db_free_done",
+  "text": "Super! Zrobiłeś własną bazę danych!"
+ },
+ {
+  "scene": "Programuj robota – podpowiedź poziomu",
+  "id": "code_tip_1",
+  "text": "Dotknij strzałki, żeby dodać krok. Dotknij kroku, żeby go powtórzyć (×2, ×3…)."
+ },
+ {
+  "scene": "Programuj robota – podpowiedź poziomu",
+  "id": "code_tip_2",
+  "text": "Połącz kroki: kilka w prawo i kilka w dół."
+ },
+ {
+  "scene": "Programuj robota – podpowiedź poziomu",
+  "id": "code_tip_3",
+  "text": "Mur blokuje drogę. Obejdź go górą albo dołem."
+ },
+ {
+  "scene": "Programuj robota – podpowiedź poziomu",
+  "id": "code_tip_4",
+  "text": "Zaplanuj całą trasę, zanim naciśniesz Start."
+ },
+ {
+  "scene": "Programuj robota – podpowiedź poziomu",
+  "id": "code_tip_5",
+  "text": "Ostatni poziom: trasa zygzakiem!"
+ },
+ {
+  "scene": "Programuj robota",
+  "id": "code_win",
+  "text": "Brawo! Program działa!"
+ },
+ {
+  "scene": "Programuj robota",
+  "id": "code_fin",
+  "text": "Jesteś programistą! Wszystkie poziomy ukończone!"
+ }
+]
