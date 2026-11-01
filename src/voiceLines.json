@@ -448,5 +448,95 @@
   "scene": "Programuj robota",
   "id": "code_fin",
   "text": "Jesteś programistą! Wszystkie poziomy ukończone!"
+ },
+ {
+  "scene": "Domek RoboBita",
+  "id": "shop_hello",
+  "text": "Witaj w moim warsztacie! Wybierz, jak mam wyglądać."
+ },
+ {
+  "scene": "Eko-Świat",
+  "id": "eco_intro",
+  "text": "Pomóż mi posprzątać świat i poznać zwierzęta!"
+ },
+ {
+  "scene": "Eko-Świat",
+  "id": "eco_done",
+  "text": "Brawo! Jesteś prawdziwym ekologiem!"
+ },
+ {
+  "scene": "Fabuła – statek RoboBita",
+  "id": "story_0",
+  "text": "Mój statek rozbił się na Ziemi! Pomóż mi zebrać jego części, a wrócę do domu."
+ },
+ {
+  "scene": "Fabuła – statek RoboBita",
+  "id": "story_1",
+  "text": "Mamy silnik! Brakuje jeszcze kilku części. Graj dalej!"
+ },
+ {
+  "scene": "Fabuła – statek RoboBita",
+  "id": "story_2",
+  "text": "Kabina jest na miejscu. Świetnie ci idzie, kapitanie!"
+ },
+ {
+  "scene": "Fabuła – statek RoboBita",
+  "id": "story_3",
+  "text": "Są już skrzydła! Statek zaczyna wyglądać jak prawdziwa rakieta."
+ },
+ {
+  "scene": "Fabuła – statek RoboBita",
+  "id": "story_4",
+  "text": "Antena działa! Słyszę sygnał z domu. Jeszcze dwie części!"
+ },
+ {
+  "scene": "Fabuła – statek RoboBita",
+  "id": "story_5",
+  "text": "Została ostatnia część! Jesteśmy tak blisko startu!"
+ },
+ {
+  "scene": "Fabuła – statek RoboBita",
+  "id": "story_6",
+  "text": "Statek gotowy! Dziękuję, przyjacielu! Zawsze będziesz moim kapitanem."
+ },
+ {
+  "scene": "Logiczny Detektyw",
+  "id": "math_intro",
+  "text": "Witaj, detektywie! Rozwiąż zagadki z liczbami i figurami."
+ },
+ {
+  "scene": "Logiczny Detektyw",
+  "id": "math_done",
+  "text": "Brawo, detektywie! Zagadka rozwiązana!"
+ },
+ {
+  "scene": "Słowne Safari",
+  "id": "safari_intro",
+  "text": "Witaj w kosmicznym safari! Poznajemy nowe słowa."
+ },
+ {
+  "scene": "Słowne Safari",
+  "id": "safari_done",
+  "text": "Świetnie! Znasz już nowe słowa!"
+ },
+ {
+  "scene": "Bezpieczny Internet",
+  "id": "safe_intro",
+  "text": "Przeczytaj historię i wybierz, co zrobisz. Bezpieczeństwo w sieci jest ważne!"
+ },
+ {
+  "scene": "Bezpieczny Internet",
+  "id": "safe_done",
+  "text": "Brawo! Wiesz już, jak być bezpiecznym w internecie!"
+ },
+ {
+  "scene": "Word i prezentacje",
+  "id": "office_intro",
+  "text": "Wykonaj zadania z listy, formatując tekst jak w programie Word."
+ },
+ {
+  "scene": "Word i prezentacje",
+  "id": "office_done",
+  "text": "Brawo! Umiesz formatować tekst i robić prezentację!"
  }
 ]

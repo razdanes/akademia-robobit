@@ -1,3 +1,5 @@
 @tailwind base;@tailwind components;@tailwind utilities;
 body{font-family:'Baloo 2',system-ui,sans-serif;background:#0f172a;color:#fff;touch-action:manipulation}
 canvas{touch-action:none}
+
+@media print { body * { visibility: hidden } .print-area, .print-area * { visibility: visible } .print-area { position: absolute; inset: 0; -webkit-print-color-adjust: exact; print-color-adjust: exact } }

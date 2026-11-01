@@ -1,91 +1,109 @@
-plik,kwestia
-menu_hello.mp3,Cześć! Jestem RoboBit. Wybierz zabawę!
-color_done.mp3,Brawo! Świetna robota!
-paint_done.mp3,Piękny rysunek!
-pc_intro.mp3,"Zbudujmy komputer! Dotknij miejsca, w którym ma być pierwsza część."
-pc_part_case.mp3,"Obudowa. Obudowa to „dom” komputera. Chroni części przed kurzem i uderzeniami. Ma otwory i wentylatory, żeby w środku płynęło chłodne powietrze."
-pc_part_board.mp3,Płyta główna. Płyta główna łączy wszystkie części ze sobą – jak miasto z drogami. Wkręcamy ją w obudowę. Każda część wpina się w inne gniazdo na płycie.
-pc_part_cpu.mp3,Procesor (CPU). Procesor to mózg komputera. Liczy i wykonuje polecenia. Wkładamy go w kwadratowe gniazdo na płycie. Uważaj na delikatne złote nóżki!
-pc_part_cooler.mp3,"Chłodzenie. Procesor bardzo się grzeje, jak silnik w samochodzie. Chłodzenie z wentylatorem stawiamy na procesorze i wywiewa ciepło. Bez niego komputer by się zawiesił."
-pc_part_ram.mp3,"Pamięć RAM. RAM to pamięć na chwilę. Trzyma to, co robisz teraz, np. otwartą grę. Wpinamy ją w długie wąskie sloty obok procesora. Po wyłączeniu prądu RAM wszystko zapomina."
-pc_part_ssd.mp3,"Dysk SSD. Dysk to schowek. Tu na stałe mieszkają system, gry i zdjęcia. Mały dysk M.2 wpinamy w gniazdo na płycie. SSD jest dużo szybszy niż stary dysk z talerzami."
-pc_part_gpu.mp3,Karta graficzna. Karta graficzna rysuje obraz na ekranie. Ważna w grach i filmach. Wsuwamy ją w najdłuższe gniazdo PCIe aż kliknie.
-pc_part_psu.mp3,"Zasilacz. Zasilacz zamienia prąd z gniazdka na bezpieczny prąd dla części. Kable z zasilacza idą do płyty, karty graficznej i dysku. To „serce”, które daje energię."
-pc_ask_board.mp3,Teraz: Płyta główna. Gdzie to zamontujemy?
-pc_ask_cpu.mp3,Teraz: Procesor (CPU). Gdzie to zamontujemy?
-pc_ask_cooler.mp3,Teraz: Chłodzenie. Gdzie to zamontujemy?
-pc_ask_ram.mp3,Teraz: Pamięć RAM. Gdzie to zamontujemy?
-pc_ask_ssd.mp3,Teraz: Dysk SSD. Gdzie to zamontujemy?
-pc_ask_gpu.mp3,Teraz: Karta graficzna. Gdzie to zamontujemy?
-pc_ask_psu.mp3,Teraz: Zasilacz. Gdzie to zamontujemy?
-pc_hint_case.mp3,"Hmm, to nie tutaj. Podpowiedź: Dotknij dużej ramki dookoła całego komputera."
-pc_hint_board.mp3,"Hmm, to nie tutaj. Podpowiedź: To duża zielona płyta w środku obudowy."
-pc_hint_cpu.mp3,"Hmm, to nie tutaj. Podpowiedź: Szukaj małego kwadratu w lewym górnym rogu płyty."
-pc_hint_cooler.mp3,"Hmm, to nie tutaj. Podpowiedź: Połóż je na procesorze – dotknij jeszcze raz w tym samym miejscu."
-pc_hint_ram.mp3,"Hmm, to nie tutaj. Podpowiedź: Cztery długie, pionowe sloty obok procesora."
-pc_hint_ssd.mp3,"Hmm, to nie tutaj. Podpowiedź: Małe, płaskie gniazdo pod procesorem."
-pc_hint_gpu.mp3,"Hmm, to nie tutaj. Podpowiedź: Najdłuższe poziome gniazdo na dole płyty."
-pc_hint_psu.mp3,"Hmm, to nie tutaj. Podpowiedź: Prostokąt w prawym dolnym rogu obudowy."
-pc_done.mp3,Hura! Zbudowałeś komputer! Wszystkie części współpracują.
-kb_pick.mp3,"Wybierz, czego chcesz ćwiczyć!"
-kb_press.mp3,Naciśnij
-kb_good.mp3,Świetnie piszesz!
-kb_try.mp3,Dobra robota! Ćwicz dalej.
-kb_char_A.mp3,a
-kb_char_B.mp3,be
-kb_char_C.mp3,ce
-kb_char_D.mp3,de
-kb_char_E.mp3,e
-kb_char_F.mp3,ef
-kb_char_G.mp3,gie
-kb_char_H.mp3,ha
-kb_char_I.mp3,i
-kb_char_J.mp3,jot
-kb_char_K.mp3,ka
-kb_char_L.mp3,el
-kb_char_M.mp3,em
-kb_char_N.mp3,en
-kb_char_O.mp3,o
-kb_char_P.mp3,pe
-kb_char_Q.mp3,ku
-kb_char_R.mp3,er
-kb_char_S.mp3,es
-kb_char_T.mp3,te
-kb_char_U.mp3,u
-kb_char_V.mp3,fał
-kb_char_W.mp3,wu
-kb_char_X.mp3,iks
-kb_char_Y.mp3,igrek
-kb_char_Z.mp3,zet
-kb_char_0.mp3,zero
-kb_char_1.mp3,jeden
-kb_char_2.mp3,dwa
-kb_char_3.mp3,trzy
-kb_char_4.mp3,cztery
-kb_char_5.mp3,pięć
-kb_char_6.mp3,sześć
-kb_char_7.mp3,siedem
-kb_char_8.mp3,osiem
-kb_char_9.mp3,dziewięć
-kb_word_KOT.mp3,kot
-kb_word_DOM.mp3,dom
-kb_word_PIES.mp3,pies
-kb_word_LAS.mp3,las
-kb_word_ROBOT.mp3,robot
-kb_word_MAMA.mp3,mama
-kb_word_TATA.mp3,tata
-kb_word_LATO.mp3,lato
-kb_word_MYSZ.mp3,mysz
-kb_word_KOD.mp3,kod
-kb_word_GRA.mp3,gra
-kb_word_BIT.mp3,bit
-db_intro.mp3,"Baza danych to tabela. Wiersz to jeden zapis, a kolumny to jego pola."
-db_done.mp3,Brawo! Znasz już podstawy baz danych!
-db_free_done.mp3,Super! Zrobiłeś własną bazę danych!
-code_tip_1.mp3,"Dotknij strzałki, żeby dodać krok. Dotknij kroku, żeby go powtórzyć (×2, ×3…)."
-code_tip_2.mp3,Połącz kroki: kilka w prawo i kilka w dół.
-code_tip_3.mp3,Mur blokuje drogę. Obejdź go górą albo dołem.
-code_tip_4.mp3,"Zaplanuj całą trasę, zanim naciśniesz Start."
-code_tip_5.mp3,Ostatni poziom: trasa zygzakiem!
-code_win.mp3,Brawo! Program działa!
-code_fin.mp3,Jesteś programistą! Wszystkie poziomy ukończone!
+plik,kwestia,status
+menu_hello.mp3,Cześć! Jestem RoboBit. Wybierz zabawę!,GOTOWE
+color_done.mp3,Brawo! Świetna robota!,GOTOWE
+paint_done.mp3,Piękny rysunek!,GOTOWE
+pc_intro.mp3,"Zbudujmy komputer! Dotknij miejsca, w którym ma być pierwsza część.",GOTOWE
+pc_part_case.mp3,"Obudowa. Obudowa to „dom” komputera. Chroni części przed kurzem i uderzeniami. Ma otwory i wentylatory, żeby w środku płynęło chłodne powietrze.",GOTOWE
+pc_part_board.mp3,Płyta główna. Płyta główna łączy wszystkie części ze sobą – jak miasto z drogami. Wkręcamy ją w obudowę. Każda część wpina się w inne gniazdo na płycie.,GOTOWE
+pc_part_cpu.mp3,Procesor (CPU). Procesor to mózg komputera. Liczy i wykonuje polecenia. Wkładamy go w kwadratowe gniazdo na płycie. Uważaj na delikatne złote nóżki!,GOTOWE
+pc_part_cooler.mp3,"Chłodzenie. Procesor bardzo się grzeje, jak silnik w samochodzie. Chłodzenie z wentylatorem stawiamy na procesorze i wywiewa ciepło. Bez niego komputer by się zawiesił.",do nagrania
+pc_part_ram.mp3,"Pamięć RAM. RAM to pamięć na chwilę. Trzyma to, co robisz teraz, np. otwartą grę. Wpinamy ją w długie wąskie sloty obok procesora. Po wyłączeniu prądu RAM wszystko zapomina.",do nagrania
+pc_part_ssd.mp3,"Dysk SSD. Dysk to schowek. Tu na stałe mieszkają system, gry i zdjęcia. Mały dysk M.2 wpinamy w gniazdo na płycie. SSD jest dużo szybszy niż stary dysk z talerzami.",do nagrania
+pc_part_gpu.mp3,Karta graficzna. Karta graficzna rysuje obraz na ekranie. Ważna w grach i filmach. Wsuwamy ją w najdłuższe gniazdo PCIe aż kliknie.,do nagrania
+pc_part_psu.mp3,"Zasilacz. Zasilacz zamienia prąd z gniazdka na bezpieczny prąd dla części. Kable z zasilacza idą do płyty, karty graficznej i dysku. To „serce”, które daje energię.",do nagrania
+pc_ask_board.mp3,Teraz: Płyta główna. Gdzie to zamontujemy?,do nagrania
+pc_ask_cpu.mp3,Teraz: Procesor (CPU). Gdzie to zamontujemy?,do nagrania
+pc_ask_cooler.mp3,Teraz: Chłodzenie. Gdzie to zamontujemy?,do nagrania
+pc_ask_ram.mp3,Teraz: Pamięć RAM. Gdzie to zamontujemy?,do nagrania
+pc_ask_ssd.mp3,Teraz: Dysk SSD. Gdzie to zamontujemy?,do nagrania
+pc_ask_gpu.mp3,Teraz: Karta graficzna. Gdzie to zamontujemy?,do nagrania
+pc_ask_psu.mp3,Teraz: Zasilacz. Gdzie to zamontujemy?,do nagrania
+pc_hint_case.mp3,"Hmm, to nie tutaj. Podpowiedź: Dotknij dużej ramki dookoła całego komputera.",do nagrania
+pc_hint_board.mp3,"Hmm, to nie tutaj. Podpowiedź: To duża zielona płyta w środku obudowy.",do nagrania
+pc_hint_cpu.mp3,"Hmm, to nie tutaj. Podpowiedź: Szukaj małego kwadratu w lewym górnym rogu płyty.",do nagrania
+pc_hint_cooler.mp3,"Hmm, to nie tutaj. Podpowiedź: Połóż je na procesorze – dotknij jeszcze raz w tym samym miejscu.",do nagrania
+pc_hint_ram.mp3,"Hmm, to nie tutaj. Podpowiedź: Cztery długie, pionowe sloty obok procesora.",do nagrania
+pc_hint_ssd.mp3,"Hmm, to nie tutaj. Podpowiedź: Małe, płaskie gniazdo pod procesorem.",do nagrania
+pc_hint_gpu.mp3,"Hmm, to nie tutaj. Podpowiedź: Najdłuższe poziome gniazdo na dole płyty.",do nagrania
+pc_hint_psu.mp3,"Hmm, to nie tutaj. Podpowiedź: Prostokąt w prawym dolnym rogu obudowy.",do nagrania
+pc_done.mp3,Hura! Zbudowałeś komputer! Wszystkie części współpracują.,do nagrania
+kb_pick.mp3,"Wybierz, czego chcesz ćwiczyć!",do nagrania
+kb_press.mp3,Naciśnij,do nagrania
+kb_good.mp3,Świetnie piszesz!,do nagrania
+kb_try.mp3,Dobra robota! Ćwicz dalej.,do nagrania
+kb_char_A.mp3,a,do nagrania
+kb_char_B.mp3,be,do nagrania
+kb_char_C.mp3,ce,do nagrania
+kb_char_D.mp3,de,do nagrania
+kb_char_E.mp3,e,do nagrania
+kb_char_F.mp3,ef,do nagrania
+kb_char_G.mp3,gie,do nagrania
+kb_char_H.mp3,ha,do nagrania
+kb_char_I.mp3,i,do nagrania
+kb_char_J.mp3,jot,do nagrania
+kb_char_K.mp3,ka,do nagrania
+kb_char_L.mp3,el,do nagrania
+kb_char_M.mp3,em,do nagrania
+kb_char_N.mp3,en,do nagrania
+kb_char_O.mp3,o,do nagrania
+kb_char_P.mp3,pe,do nagrania
+kb_char_Q.mp3,ku,do nagrania
+kb_char_R.mp3,er,do nagrania
+kb_char_S.mp3,es,do nagrania
+kb_char_T.mp3,te,do nagrania
+kb_char_U.mp3,u,do nagrania
+kb_char_V.mp3,fał,do nagrania
+kb_char_W.mp3,wu,do nagrania
+kb_char_X.mp3,iks,do nagrania
+kb_char_Y.mp3,igrek,do nagrania
+kb_char_Z.mp3,zet,do nagrania
+kb_char_0.mp3,zero,do nagrania
+kb_char_1.mp3,jeden,do nagrania
+kb_char_2.mp3,dwa,do nagrania
+kb_char_3.mp3,trzy,do nagrania
+kb_char_4.mp3,cztery,do nagrania
+kb_char_5.mp3,pięć,do nagrania
+kb_char_6.mp3,sześć,do nagrania
+kb_char_7.mp3,siedem,do nagrania
+kb_char_8.mp3,osiem,do nagrania
+kb_char_9.mp3,dziewięć,do nagrania
+kb_word_KOT.mp3,kot,do nagrania
+kb_word_DOM.mp3,dom,do nagrania
+kb_word_PIES.mp3,pies,do nagrania
+kb_word_LAS.mp3,las,do nagrania
+kb_word_ROBOT.mp3,robot,do nagrania
+kb_word_MAMA.mp3,mama,do nagrania
+kb_word_TATA.mp3,tata,do nagrania
+kb_word_LATO.mp3,lato,do nagrania
+kb_word_MYSZ.mp3,mysz,do nagrania
+kb_word_KOD.mp3,kod,do nagrania
+kb_word_GRA.mp3,gra,do nagrania
+kb_word_BIT.mp3,bit,do nagrania
+db_intro.mp3,"Baza danych to tabela. Wiersz to jeden zapis, a kolumny to jego pola.",do nagrania
+db_done.mp3,Brawo! Znasz już podstawy baz danych!,do nagrania
+db_free_done.mp3,Super! Zrobiłeś własną bazę danych!,do nagrania
+code_tip_1.mp3,"Dotknij strzałki, żeby dodać krok. Dotknij kroku, żeby go powtórzyć (×2, ×3…).",do nagrania
+code_tip_2.mp3,Połącz kroki: kilka w prawo i kilka w dół.,do nagrania
+code_tip_3.mp3,Mur blokuje drogę. Obejdź go górą albo dołem.,do nagrania
+code_tip_4.mp3,"Zaplanuj całą trasę, zanim naciśniesz Start.",do nagrania
+code_tip_5.mp3,Ostatni poziom: trasa zygzakiem!,do nagrania
+code_win.mp3,Brawo! Program działa!,do nagrania
+code_fin.mp3,Jesteś programistą! Wszystkie poziomy ukończone!,do nagrania
+shop_hello.mp3,"Witaj w moim warsztacie! Wybierz, jak mam wyglądać.",do nagrania
+eco_intro.mp3,Pomóż mi posprzątać świat i poznać zwierzęta!,do nagrania
+eco_done.mp3,Brawo! Jesteś prawdziwym ekologiem!,do nagrania
+story_0.mp3,"Mój statek rozbił się na Ziemi! Pomóż mi zebrać jego części, a wrócę do domu.",do nagrania
+story_1.mp3,Mamy silnik! Brakuje jeszcze kilku części. Graj dalej!,do nagrania
+story_2.mp3,"Kabina jest na miejscu. Świetnie ci idzie, kapitanie!",do nagrania
+story_3.mp3,Są już skrzydła! Statek zaczyna wyglądać jak prawdziwa rakieta.,do nagrania
+story_4.mp3,Antena działa! Słyszę sygnał z domu. Jeszcze dwie części!,do nagrania
+story_5.mp3,Została ostatnia część! Jesteśmy tak blisko startu!,do nagrania
+story_6.mp3,"Statek gotowy! Dziękuję, przyjacielu! Zawsze będziesz moim kapitanem.",do nagrania
+math_intro.mp3,"Witaj, detektywie! Rozwiąż zagadki z liczbami i figurami.",do nagrania
+math_done.mp3,"Brawo, detektywie! Zagadka rozwiązana!",do nagrania
+safari_intro.mp3,Witaj w kosmicznym safari! Poznajemy nowe słowa.,do nagrania
+safari_done.mp3,Świetnie! Znasz już nowe słowa!,do nagrania
+safe_intro.mp3,"Przeczytaj historię i wybierz, co zrobisz. Bezpieczeństwo w sieci jest ważne!",do nagrania
+safe_done.mp3,"Brawo! Wiesz już, jak być bezpiecznym w internecie!",do nagrania
+office_intro.mp3,"Wykonaj zadania z listy, formatując tekst jak w programie Word.",do nagrania
+office_done.mp3,Brawo! Umiesz formatować tekst i robić prezentację!,do nagrania
