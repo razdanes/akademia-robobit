@@ -26,7 +26,7 @@ export default function Dashboard({ p, onBack, onReset }: { p: Progress; onBack:
     <h3 className="mt-5 text-xl font-bold">Postępy w dziedzinach</h3>
     <div className="mt-2 grid gap-2 sm:grid-cols-2">{DOMAINS.map(([n, ids]) => { const c = ids.reduce((x, i) => x + (p.completed[i] || 0), 0); return <div key={n} className="rounded-xl bg-white/10 p-3"><div className="font-bold">{n}</div>
       <div className="text-slate-300">{ids.length ? `Ukończone aktywności: ${c}` : 'Moduł w przygotowaniu'}</div></div> })}</div>
-    <div className="mt-4 rounded-xl bg-white/10 p-3 text-slate-200">🎨 Pokolorowane obrazki: {p.done.length} z {PAGES.length} · ⌨️ Rekordy klawiatury: litery {best('letters')}, cyfry {best('digits')}, rząd domowy {best('home')}, słowa {best('words')}</div>
+    <div className="mt-4 rounded-xl bg-white/10 p-3 text-slate-200">🎨 Pokolorowane obrazki: {p.done.length} z {PAGES.length} · ⌨️ Gwiazdki w lekcjach klawiatury (maks. 3): {[['letters', 'litery'], ['digits', 'cyfry'], ['home', 'rząd domowy'], ['case', 'duże litery'], ['polish', 'polskie litery'], ['special', 'znaki'], ['shortcuts', 'skróty'], ['words', 'słowa']].map(([id, n]) => `${n} ${best(id)}`).join(', ')}</div>
     <div className="mt-2 rounded-xl bg-white/10 p-3 text-slate-200">🏅 {p.badges.length ? p.badges.join(' · ') : 'Brak odznak'}</div>
     <div className="mt-4 flex flex-wrap items-center gap-2 rounded-xl bg-white/10 p-3 print:hidden"><span>🏆 Dyplom do wydruku:</span>
       <input value={name} onChange={e => setName(e.target.value)} placeholder="Imię ucznia (nie jest zapisywane)" className="rounded-lg bg-white px-3 py-2 text-slate-900" />

@@ -4,7 +4,7 @@ const KEY = 'robobit-events'
 let cur: Att | null = null
 const load = (): Att[] => { try { return JSON.parse(localStorage.getItem(KEY) || '[]') } catch { return [] } }
 const save = (a: Att[]) => { try { localStorage.setItem(KEY, JSON.stringify(a.slice(-500))) } catch {} }
-export const startAttempt = (module: string) => { cur = { id: crypto.randomUUID(), module, startedAt: new Date().toISOString(), completed: false } }
+export const startAttempt = (module: string) => { cur = { id: typeof crypto !== 'undefined' && 'randomUUID' in crypto ? crypto.randomUUID() : Math.random().toString(36).slice(2) + Date.now().toString(36), module, startedAt: new Date().toISOString(), completed: false } }
 export const markCompleted = () => { if (cur) cur.completed = true }
 export function endAttempt() {
   if (!cur) return

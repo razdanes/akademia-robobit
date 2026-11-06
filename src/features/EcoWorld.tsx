@@ -65,7 +65,6 @@ function Habitat({ onEnd, onExit }: { onEnd: (s: number) => void; onExit: () => 
 
 export default function EcoWorld({ onEnd, onBack }: { onEnd: (s: number) => void; onBack: () => void }) {
   const [g, setG] = useState<'menu' | 'sort' | 'hab'>('menu')
-  useEffect(() => { if (g === 'menu') playVoice('eco_intro') }, [])
   return (
     <div className="mx-auto max-w-3xl p-4 pt-14">
       <button onClick={g === 'menu' ? onBack : () => setG('menu')} className="rounded-full bg-white/20 px-4 py-2 text-lg">← {g === 'menu' ? 'Menu' : 'Eko-Świat'}</button>

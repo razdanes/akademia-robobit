@@ -1,7 +1,7 @@
 // Plays /voice/<id>.mp3 if the file exists (see nagrania/lista-nagran.md); otherwise reads the line with the browser voice.
 // Files are fetched as blobs so the service worker can cache them and they play offline.
 import lines from './voiceLines.json'
-import { speak } from './audio'
+import { isMaleVoice, speak } from './audio'
 import { duck, isMuted } from './music'
 const TTS_FALLBACK = true // set to false to stay silent for lines without an mp3
 const TXT: Record<string, string> = {}
@@ -17,7 +17,7 @@ async function one(id: string, fallback: string | undefined, my: number) {
   if (my !== token || isMuted()) return
   const url = await load(id)
   if (my !== token) return
-  if (url) await new Promise<void>(res => { el = new Audio(url); el.onended = el.onerror = () => res(); el.play().catch(() => res()) })
+  if (url) await new Promise<void>(res => { el = new Audio(url); if (isMaleVoice()) { const a = el as any; a.preservesPitch = false; a.webkitPreservesPitch = false; el.playbackRate = .87 }; el.onended = el.onerror = () => res(); el.play().catch(() => res()) })
   else if (TTS_FALLBACK) { const t = TXT[id] || fallback; if (t) await new Promise<void>(res => speak(t, res)) }
 }
 export function playVoice(id: string, fallback?: string) { stop(); duck(true); const my = token; void one(id, fallback, my).finally(() => { if (my === token) duck(false) }) }

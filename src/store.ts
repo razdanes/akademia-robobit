@@ -12,11 +12,11 @@ export const QUESTS = [
   { id: 'q_eco', mod: 'eco', text: 'Posprzątaj świat w Eko-Świecie' }, { id: 'q_math', mod: 'math', text: 'Rozwiąż zagadki Logicznego Detektywa' }, { id: 'q_safari', mod: 'safari', text: 'Poznaj nowe słowa w Słownym Safari' }, { id: 'q_safe', mod: 'safe', text: 'Przejdź historie w module Bezpieczny Internet' }, { id: 'q_office', mod: 'office', text: 'Sformatuj tekst i zrób prezentację' },
 ]
 export const levelOf = (stars: number) => Math.floor(stars / 10) + 1
-const today = () => new Date().toISOString().slice(0, 10)
+const today = () => new Date().toLocaleDateString('sv-SE')
 export function useProgress() {
   const [p, setP] = useState<Progress>(() => { try { return { ...init, ...JSON.parse(localStorage.getItem(KEY) || '{}') } } catch { return init } })
   useEffect(() => { try { localStorage.setItem(KEY, JSON.stringify(p)) } catch {} }, [p])
-  useEffect(() => { const d = today(); setP(s => (s.quest && s.quest.date === d ? s : { ...s, quest: { date: d, id: QUESTS[Math.floor(Math.random() * QUESTS.length)].id, done: false } })) }, [])
+  useEffect(() => { const d = today(); setP(s => (s.quest && s.quest.date === d ? s : { ...s, quest: { date: d, id: QUESTS[Math.floor(Math.random() * QUESTS.length)].id, done: false } })) }, [p.quest])
   const award = useCallback((stars: number, badge?: string, doneId?: string) => setP(s => ({ ...s, stars: s.stars + stars,
     badges: badge && !s.badges.includes(badge) ? [...s.badges, badge] : s.badges, done: doneId && !s.done.includes(doneId) ? [...s.done, doneId] : s.done })), [])
   const complete = useCallback((mod: string) => setP(s => {

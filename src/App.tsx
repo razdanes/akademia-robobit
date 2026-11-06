@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import RoboBit from './components/RoboBit'
 import Backdrop from './components/Backdrop'
@@ -22,6 +22,7 @@ import { setLook } from './look'
 import { STORY, PARTS } from './story'
 import { click } from './audio'
 import { isMuted, setMusic, toggleMute } from './music'
+import { isMaleVoice, toggleVoice } from './audio'
 import { playVoice, playVoiceIfFile } from './voice'
 
 type Screen = 'menu' | 'coloring' | 'pc' | 'keys' | 'paint' | 'db' | 'code' | 'eco' | 'math' | 'safari' | 'safe' | 'office' | 'shop' | 'dash'
@@ -43,7 +44,8 @@ const TILES: Tile[] = [
 export default function App() {
   const [screen, setScreen] = useState<Screen>('menu'), [intro, setIntro] = useState(true), [launch, setLaunch] = useState<Tile | null>(null)
   const { p, award, complete, tick, buy, equip, reset } = useProgress()
-  const [mute, setMute] = useState(isMuted())
+  const [mute, setMute] = useState(isMuted()), [male, setMale] = useState(isMaleVoice())
+  const last = useRef<Record<string, number>>({})   // ochrona przed „farmieniem” gwiazdek: nagroda max co 30 s na moduł
   useEffect(() => { setMusic(screen === 'menu' || screen === 'dash' ? 'menu' : ['coloring', 'paint', 'shop', 'safari'].includes(screen) ? 'color' : 'game') }, [screen])
   useEffect(() => { setLook(p.equipped) }, [p.equipped])
   useEffect(() => { const t = setInterval(() => { if (!intro && screen !== 'menu' && screen !== 'dash' && !document.hidden) tick(screen) }, 1000); return () => clearInterval(t) }, [screen, intro, tick])
@@ -56,14 +58,14 @@ export default function App() {
     setTimeout(() => { setLaunch(null); if (t.voice) playVoiceIfFile(t.voice) }, 1350)
   }
   const back = () => { click(440); setScreen('menu') }
-  const aw = (mod: string, badge: string) => (s: number) => { award(s, badge); finish(mod) }
+  const aw = (mod: string, badge: string) => (s: number) => { const now = Date.now(), fresh = now - (last.current[mod] || 0) > 30000; last.current[mod] = now; if (fresh) { award(s, badge); finish(mod) } }
   const lvl = levelOf(p.stars), xp = p.stars % 10
   const parts = Math.min(PARTS.length, p.badges.length + p.quests)
   const quest = p.quest && QUESTS.find(q => q.id === p.quest!.id), qTile = quest && TILES.find(t => t.id === quest.mod)
 
   const rec = TILES.filter(t => !['shop', 'paint', 'coloring'].includes(t.id)).sort((a, b) => (p.completed[a.id] || 0) - (p.completed[b.id] || 0))[0]
   let view
-  if (screen === 'coloring') view = <ColoringBook done={p.done} onBack={back} onDone={(s, id) => { award(s, 'Kolorowanki: pierwszy obrazek', id); finish('coloring') }} />
+  if (screen === 'coloring') view = <ColoringBook done={p.done} onBack={back} onDone={(s, id) => { if (!p.done.includes(id)) { award(s, 'Kolorowanki: pierwszy obrazek', id); finish('coloring') } }} />
   else if (screen === 'paint') view = <PaintJunior onBack={back} onDone={aw('paint', 'Mały artysta')} />
   else if (screen === 'pc') view = <PcBuilder onBack={back} onWin={aw('pc', 'Budowniczy komputerów')} />
   else if (screen === 'db') view = <DbGame onBack={back} onEnd={aw('db', 'Mistrz baz danych')} />
@@ -118,6 +120,7 @@ export default function App() {
     <Backdrop />
     <AnimatePresence>{intro && <Intro key="intro" onStart={() => { setIntro(false); playVoice('menu_hello') }} />}</AnimatePresence>
     <button onClick={() => setMute(toggleMute())} aria-label="Dźwięk" className="fixed right-3 top-3 z-40 h-12 w-12 rounded-full bg-white/20 text-2xl backdrop-blur">{mute ? '🔇' : '🔊'}</button>
+    <button onClick={() => { setMale(toggleVoice()); playVoice('menu_hello') }} aria-label="Zmień głos robota" title={male ? 'Głos: męski (kliknij, aby zmienić)' : 'Głos: oryginalny (kliknij, aby zmienić)'} className="fixed right-3 top-[4.25rem] z-40 h-12 w-12 rounded-full bg-white/20 text-2xl backdrop-blur">{male ? '👨' : '🎙️'}</button>
     <AnimatePresence mode="wait"><motion.div key={screen} initial={{ opacity: 0, y: 20, scale: .98 }} animate={{ opacity: 1, y: 0, scale: 1 }} exit={{ opacity: 0, scale: .98 }}>{view}</motion.div></AnimatePresence>
     <AnimatePresence>{launch && <motion.div key="launch" className={`fixed inset-0 z-50 flex flex-col items-center justify-center bg-gradient-to-br ${launch.color}`}
       initial={{ clipPath: 'circle(0% at 50% 50%)' }} animate={{ clipPath: 'circle(150% at 50% 50%)' }} exit={{ opacity: 0 }} transition={{ duration: .45 }}>
